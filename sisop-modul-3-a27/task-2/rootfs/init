@@ -1,0 +1,32 @@
+#!/bin/sh
+/bin/mount -t proc none /proc
+/bin/mount -t sysfs none /sys
+/bin/mount -t devtmpfs devtmpfs /dev
+
+MODE="1"
+for arg in $(cat /proc/cmdline); do
+    case $arg in
+        mode=1) MODE="1" ;;
+        mode=2) MODE="2" ;;
+        mode=3) MODE="3" ;;
+    esac
+done
+
+case $MODE in
+    1) COLOR="32" ;;
+    2) COLOR="34" ;;
+    3) COLOR="31" ;;
+    *) COLOR="32" ;;
+esac
+
+# Tulis /etc/profile dengan warna yang sesuai
+echo "export PS1='\\033[${COLOR}m\\u@\\h:\\w\\$ \\033[0m'" > /etc/profile
+
+echo "========================================="
+echo "     Selamat datang di SentinelOS        "
+echo "     Mode : ${MODE}                      "
+echo "========================================="
+
+while true; do
+    /bin/login
+done

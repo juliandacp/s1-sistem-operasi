@@ -1,0 +1,23 @@
+#!/bin/sh
+echo "================================"
+echo "       SentinelOS System Info   "
+echo "================================"
+echo "Hostname        : $(cat /etc/hostname 2>/dev/null || hostname)"
+echo "Tanggal & Waktu : $(date)"
+echo "Uptime          : $(uptime | awk -F 'up ' '{print $2}' | awk -F ',' '{print $1}')"
+echo ""
+echo "User yang login:"
+who | while read line; do
+    user=$(echo $line | awk '{print $1}')
+    home=$(grep "^$user:" /etc/passwd | cut -d: -f6)
+    if [ -z "$home" ]; then
+        home=$(eval echo ~$user)
+    fi
+    echo "  - $user (home: $home)"
+done
+echo ""
+echo "Jumlah proses   : $(ps -e | wc -l)"
+MemFree=$(grep MemFree /proc/meminfo | awk '{print $2}')
+MemFreeMB=$((MemFree / 1024))
+echo "Sisa memori     : ${MemFreeMB} MB"
+echo "================================"
