@@ -1,0 +1,1 @@
+*/5 * * * * cd /mnt/c/Users/khalisya/Code/1st\ Year/Semester\ 2/sisop-modul-1-a27/task-1 && ./script.sh sync

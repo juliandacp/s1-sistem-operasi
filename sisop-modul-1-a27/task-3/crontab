@@ -1,0 +1,1 @@
+*/2 * * * * /bin/bash /home/ubuntu/sisop-modul-1-a27/task-3/generate.sh >> /home/ubuntu/sisop-modul-1-a27/task-3/cron.log 2>&1

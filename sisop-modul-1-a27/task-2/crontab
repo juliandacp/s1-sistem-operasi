@@ -1,0 +1,3 @@
+59 23 * * * /home/julian/sisop-modul-1-a27/task-2/backup_log.sh
+
+34 2 * * * /home/julian/sisop-modul-1-a27/task-2/remove_archive.sh
