@@ -12,11 +12,11 @@
 
 ### Daftar Soal _(Task List)_
 
-- [Task 1 - GAME ASSET MANAGER](/task-1/)
+- [Task 1 - GAME ASSET MANAGER](https://github.com/juliandacp/s1-sistem-operasi/tree/main/sisop-modul-1-a27/task-1/)
 
-- [Task 2 - Monyet Punch dan Ayam Wilson](/task-2/)
+- [Task 2 - Monyet Punch dan Ayam Wilson](https://github.com/juliandacp/s1-sistem-operasi/tree/main/sisop-modul-1-a27/task-2/)
 
-- [Task 3 - Pertunjukan Drama Raja Setan Manchester](/task-3/)
+- [Task 3 - Pertunjukan Drama Raja Setan Manchester](https://github.com/juliandacp/s1-sistem-operasi/tree/main/sisop-modul-1-a27/task-3/)
 
 ---
 
