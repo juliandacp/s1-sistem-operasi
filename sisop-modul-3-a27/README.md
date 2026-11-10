@@ -737,27 +737,35 @@ Masukkan screenshot hasil eksekusi program atau proses yang relevan.
 _Insert screenshots of program execution results or other relevant processes._
 
 - Output
+
   ![Alt text](task-1/assets/1e-01.png)
 
 - Opsi
+
   ![Alt text](task-1/assets/1e-02.png)
 
 - Single User
+
   ![Alt text](task-1/assets/1e-03.png)
 
 - Multi User : Root
+
   ![Alt text](task-1/assets/1e-04.png)
 
 - Multi User : Blue
+
   ![Alt text](task-1/assets/1e-05.png)
 
 - Multi User : Green
+
   ![Alt text](task-1/assets/1e-06.png)
 
 - Multi User : Red
+
   ![Alt text](task-1/assets/1e-07.png)
 
 - Multi User : Pink
+
   ![Alt text](task-1/assets/1e-08.png)
 
 ### Kode Penuh _(Full Code)_
