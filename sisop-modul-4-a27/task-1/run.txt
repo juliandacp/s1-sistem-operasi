@@ -1,0 +1,1 @@
+gcc mirrorfs.c -o mirrorfs `pkg-config fuse --cflags --libs`
