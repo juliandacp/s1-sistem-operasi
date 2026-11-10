@@ -3324,5 +3324,3 @@ pthread_join(tid, NULL);
 mq_close(q_tx); mq_close(q_rx);
 return 0;
 ```
-
----
